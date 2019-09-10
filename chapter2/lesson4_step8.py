@@ -9,7 +9,7 @@ try:
     browser = webdriver.Chrome()
     browser.get("http://suninjuly.github.io/explicit_wait2.html")
 
-    WebDriverWait(browser, 15).until(EC.text_to_be_present_in_element((By.ID, "#price"), "100"))
+    WebDriverWait(browser, 15).until(EC.text_to_be_present_in_element((By.ID, "price"), "$100"))
     browser.find_element_by_css_selector("button#book").click()
 
     browser.find_element_by_css_selector("#answer").send_keys(str(math.log(abs(12 * math.sin(int(
