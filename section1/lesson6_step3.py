@@ -1,4 +1,4 @@
-from chapter1 import lesson6_step8
+from section1 import lesson6_step8
 
 
 def test_course():
